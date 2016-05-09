@@ -41,7 +41,7 @@ if (isset($_POST["login"])) {
     </head>
     <body>
 <!-- registeration is not implemented yet. please use guest/guest for debug. -->
-        <form id="loginForm" name="loginForm" action="<?php print($_SERVER['PHP_SELF']) ?>" method="POST">
+        <form id="loginForm" name="loginForm" action="<?php print($_SERVER['SCRIPT_NAME']) ?>" method="POST">
             <fieldset>
                 <legend>login form</legend>
                 <div><?php echo $error_message ?></div>
